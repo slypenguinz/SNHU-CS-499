@@ -1,17 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CS 499 Computer Science ePortfolio</title>
+  <title>CS 499 Computer Science ePortfolio | Troy Clark</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       background-color: #f4f6f8;
       color: #222;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
@@ -22,7 +27,7 @@
     }
 
     header h1 {
-      margin-bottom: 10px;
+      margin: 0 0 10px;
       font-size: 2.5rem;
     }
 
@@ -33,23 +38,25 @@
 
     nav {
       background-color: #172b45;
-      padding: 12px;
+      padding: 15px;
       text-align: center;
     }
 
     nav a {
+      display: inline-block;
       color: white;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 5px 15px;
       font-weight: bold;
     }
 
-    nav a:hover {
+    nav a:hover,
+    nav a:focus {
       text-decoration: underline;
     }
 
     main {
-      max-width: 1000px;
+      max-width: 1050px;
       margin: 30px auto;
       padding: 0 20px;
     }
@@ -57,15 +64,29 @@
     section {
       background-color: white;
       margin-bottom: 25px;
-      padding: 25px;
+      padding: 30px;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      scroll-margin-top: 20px;
     }
 
     h2 {
       color: #1f3a5f;
       border-bottom: 2px solid #ddd;
       padding-bottom: 8px;
+      margin-top: 0;
+    }
+
+    h3 {
+      color: #1f3a5f;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
     }
 
     .artifact-grid {
@@ -77,21 +98,63 @@
     .artifact-card {
       border: 1px solid #ddd;
       border-radius: 8px;
-      padding: 20px;
+      padding: 22px;
       background-color: #fafafa;
     }
 
     .artifact-card h3 {
-      color: #1f3a5f;
       margin-top: 0;
+    }
+
+    .artifact-card p {
+      margin-bottom: 15px;
+    }
+
+    .artifact-card a,
+    section a {
+      color: #14538b;
+      font-weight: bold;
+    }
+
+    .artifact-card a:hover,
+    section a:hover {
+      text-decoration: underline;
+    }
+
+    .section-intro {
+      color: #444;
+      margin-bottom: 24px;
     }
 
     footer {
       background-color: #172b45;
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 25px 20px;
       margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 35px 15px;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      main {
+        padding: 0 12px;
+      }
+
+      section {
+        padding: 22px 18px;
+      }
+
+      nav a {
+        margin: 5px 9px;
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
@@ -100,76 +163,344 @@
 
 <header>
   <h1>CS 499 Computer Science ePortfolio</h1>
-  <p>Computer Science Capstone Portfolio</p>
+  <p>Troy Clark | Southern New Hampshire University</p>
+  <p>Software Development | Network Engineering | Cybersecurity</p>
 </header>
 
-<nav>
-  <a href="#about">About</a>
+<nav aria-label="Main navigation">
   <a href="#self-assessment">Professional Self-Assessment</a>
+  <a href="#about">About</a>
   <a href="#code-review">Code Review</a>
-  <a href="#artifacts">Artifacts</a>
+  <a href="#artifacts">Artifact Enhancements</a>
 </nav>
 
 <main>
 
-  <section id="about">
-    <h2>About This Portfolio</h2>
-    <p>
-      This ePortfolio represents the knowledge and skills I have developed throughout
-      the Computer Science program at Southern New Hampshire University. The portfolio
-      includes enhanced artifacts that demonstrate growth in software engineering and
-      design, algorithms and data structures, databases, security, and technical
-      problem-solving.
-    </p>
-  </section>
-
   <section id="self-assessment">
     <h2>Professional Self-Assessment</h2>
+
     <p>
-      My professional self-assessment will be added as I progress through CS 499.
-      It will explain how my academic work, technical skills, and project enhancements
-      demonstrate the five Computer Science program outcomes.
+      Throughout my time in the Computer Science program at Southern New
+      Hampshire University, I have developed technical skills, strengthened
+      my problem-solving abilities, and gained a better understanding of
+      where I want to take my career. When I originally started the program,
+      my goal was to become a software engineer. However, as I progressed
+      through my coursework and gained more experience working with enterprise
+      networking equipment, my interests began shifting toward network
+      engineering. I still value everything I have learned about programming
+      and software development, but I now see those skills as an advantage
+      in a career that involves designing, maintaining, troubleshooting,
+      and securing computer networks. Completing this capstone has allowed
+      me to reflect on that growth and demonstrate how my education and
+      professional experience complement each other.
+    </p>
+
+    <p>
+      One of the most valuable lessons I have learned throughout the program
+      is the importance of collaboration and communication. Computer science
+      professionals rarely work completely independently, especially when
+      supporting systems that other employees, departments, and customers
+      depend on. Through my work as a Spectrum Enterprise technician, I have
+      learned that resolving technical problems requires more than
+      understanding the equipment. It also involves communicating clearly,
+      gathering information, documenting issues, and working with others
+      to reach a solution. My coursework reinforced these skills by
+      requiring me to explain technical decisions, participate in
+      discussions, and present solutions in ways that different audiences
+      could understand. These experiences have helped me recognize how
+      effective communication and collaboration contribute to
+      organizational decision-making.
+    </p>
+
+    <p>
+      My networking coursework has been especially valuable in helping
+      me identify my career direction. Through assignments involving
+      routers, switches, network address translation, routing protocols,
+      VLANs, and network security, I gained experience designing and
+      troubleshooting networks. In one Packet Tracer project, I configured
+      separate networks, implemented DHCP services, established routing,
+      and tested connectivity between devices. These exercises helped
+      me understand how individual network components work together
+      and how configuration decisions can affect an entire environment.
+      They also strengthened my ability to approach technical problems
+      systematically rather than immediately assuming what is causing
+      an issue. As I continue developing professionally, I plan to
+      build on these skills by pursuing the Cisco Certified Network
+      Associate (CCNA) certification and expanding my knowledge of
+      enterprise networking.
+    </p>
+
+    <p>
+      The Computer Science program also strengthened my understanding
+      of software engineering, algorithms, and data structures. Learning
+      how to write and organize code taught me the importance of
+      developing solutions that are maintainable, efficient, and reliable.
+      Through different programming assignments, I learned to evaluate
+      how software processes information and how design decisions can
+      affect performance. These skills are useful beyond traditional
+      software development because modern networking increasingly
+      involves automation, software-defined infrastructure, and systems
+      that depend on applications and APIs. Understanding how software
+      works gives me an additional perspective when troubleshooting
+      problems that may involve both network connectivity and
+      application behavior.
+    </p>
+
+    <p>
+      Database development has been another important part of my
+      education. Working with MongoDB and other database concepts
+      helped me understand how information is structured, validated,
+      stored, and retrieved. I learned that database reliability
+      depends on more than successfully saving information.
+      Appropriate data types, validation rules, indexing, and
+      efficient queries all contribute to the performance and
+      integrity of an application. These concepts are also
+      relevant to enterprise technology because organizations
+      rely on accurate information for monitoring, reporting,
+      troubleshooting, and decision-making.
+    </p>
+
+    <p>
+      Security has become one of the most important considerations
+      in how I approach technology. My coursework taught me to think
+      about potential vulnerabilities rather than focusing only on
+      whether a program or network functions correctly. I gained
+      experience with authentication, access controls, input
+      validation, and network security principles. I also learned
+      that protecting systems requires a combination of secure
+      design, appropriate configuration, and continued monitoring.
+      My goal is to carry this security mindset into network
+      engineering, where protecting organizational resources
+      and maintaining reliable access are essential responsibilities.
+    </p>
+
+    <p>
+      Another experience that contributed to my growth was working
+      with a Raspberry Pi to develop a smart thermostat. This project
+      required me to connect hardware components, read temperature
+      data from a sensor, use buttons to adjust settings, control
+      LEDs, and display information on an LCD screen. I also
+      implemented a state machine to control the system's behavior.
+      Troubleshooting the wiring and software helped me develop
+      patience and a more methodical approach to identifying
+      problems. It was particularly valuable because it connected
+      programming concepts with physical hardware and showed me
+      how software interacts with devices in real-world systems.
+    </p>
+
+    <p>
+      My CS-499 capstone brings these different areas of computer
+      science together through the Travlr Getaways application,
+      which I originally developed in CS-465 Full Stack Development I.
+      I selected this application because it provided an opportunity
+      to demonstrate growth in software design and engineering,
+      algorithms and data structures, and databases. Rather than
+      selecting three unrelated projects, I chose to improve one
+      full-stack application across all three categories. This
+      allowed each enhancement to build on the previous work and
+      demonstrated how changes in one part of a system can affect
+      other components.
+    </p>
+
+    <p>
+      The first enhancement focused on software design and engineering.
+      I improved authentication, input validation, error handling,
+      and security-related functionality. The second enhancement
+      focused on algorithms and data structures by implementing
+      server-side searching, filtering, sorting, and pagination.
+      These changes improved how trip information could be retrieved
+      and displayed. The third enhancement focused on databases
+      by strengthening the Mongoose schema, improving data validation,
+      introducing appropriate numeric data types, and adding database
+      indexes and timestamps. Together, these enhancements demonstrate
+      my ability to evaluate an existing application, identify
+      opportunities for improvement, implement changes, and test
+      the results.
+    </p>
+
+    <p>
+      Completing these enhancements also reinforced the importance
+      of reviewing my own work and responding to feedback. My
+      instructor's comments throughout the capstone helped me
+      understand the value of documenting code and presenting
+      technical work clearly. All three enhancements received full
+      credit, which gave me confidence in the progress I had made
+      while reminding me that professional development does not
+      end when a project is submitted. There is always an
+      opportunity to improve documentation, maintainability,
+      security, and the overall experience for someone reviewing
+      or using the application.
+    </p>
+
+    <p>
+      As I prepare to complete my bachelor's degree, I feel that
+      the Computer Science program has provided me with a strong
+      technical foundation and a clearer professional direction.
+      My goal is to continue advancing in network engineering
+      while using my background in software development, databases,
+      and cybersecurity to become a more versatile IT professional.
+      I want to be someone who can understand how systems work
+      together, communicate effectively with different teams,
+      and contribute to solutions that are secure, reliable,
+      and valuable to an organization. This ePortfolio represents
+      both the technical skills I have developed and my commitment
+      to continuing to learn as technology evolves.
+    </p>
+
+  </section>
+
+  <section id="about">
+    <h2>About This Portfolio</h2>
+
+    <p>
+      This ePortfolio showcases my professional development and
+      technical growth throughout the Computer Science program
+      at Southern New Hampshire University.
+    </p>
+
+    <p>
+      The portfolio includes the original Travlr Getaways
+      application, three enhanced versions of the application,
+      an informal code review, and written enhancement narratives.
+      Together, these materials demonstrate my skills in software
+      engineering, algorithms and data structures, database
+      development, cybersecurity, and technical problem-solving.
+    </p>
+
+    <p>
+      My primary career interest is network engineering, and I
+      believe the programming, database, and security skills
+      demonstrated throughout this portfolio will support
+      my continued development in enterprise technology.
     </p>
   </section>
 
   <section id="code-review">
-    <h2>Code Review</h2>
+    <h2>Informal Code Review</h2>
+
     <p>
-      This section will contain my CS 499 code review video or a link to the video.
-      The review will evaluate the original artifact, identify areas for improvement,
-      and describe the enhancements planned for the capstone project.
+      As part of my CS-499 capstone, I completed an informal
+      code review of the original Travlr Getaways application.
+      The review examined the application's existing functionality,
+      identified opportunities for improvement, and outlined
+      planned enhancements in software design and engineering,
+      algorithms and data structures, and databases.
+    </p>
+
+    <p>
+      The code review also addressed application security,
+      validation, maintainability, and the relationship between
+      the proposed enhancements and the Computer Science
+      program outcomes.
+    </p>
+
+    <p>
+      <em>
+        Code review video link will be added here.
+      </em>
     </p>
   </section>
 
   <section id="artifacts">
     <h2>Artifact Enhancements</h2>
 
+    <p class="section-intro">
+      The following enhancements were completed using the
+      Travlr Getaways full-stack application originally
+      developed in CS-465. Each enhancement builds on the
+      previous version and demonstrates growth in a different
+      area of computer science.
+    </p>
+
     <div class="artifact-grid">
 
       <div class="artifact-card">
         <h3>Software Engineering and Design</h3>
+
         <p>
-          This enhancement will focus on improving the architecture, validation,
-          error handling, security, and administrative functionality of the Travlr
-          Getaways full-stack application.
+          For my first enhancement, I improved the application's
+          architecture, authentication, input validation, error
+          handling, and administrative functionality.
+        </p>
+
+        <p>
+          Key improvements included stronger JWT authentication,
+          password security, protected API routes, and improved
+          validation across the client and server.
+        </p>
+
+        <p>
+          These changes demonstrate my ability to improve
+          software reliability, maintainability, and security.
+        </p>
+
+        <p>
+          <strong>Status:</strong> Completed and instructor reviewed.
+        </p>
+
+        <p>
+          <em>Original code, enhanced code, and narrative links will be added.</em>
         </p>
       </div>
 
       <div class="artifact-card">
         <h3>Algorithms and Data Structures</h3>
+
         <p>
-          This enhancement will add improved searching, filtering, sorting, and
-          pagination capabilities to the Travlr Getaways application while evaluating
-          the efficiency of the algorithms used.
+          For my second enhancement, I improved how the
+          application retrieves and organizes trip information
+          by implementing server-side searching, filtering,
+          sorting, and pagination.
+        </p>
+
+        <p>
+          I added query validation, limits on page sizes,
+          and controls for sorting fields to improve the
+          reliability of data retrieval.
+        </p>
+
+        <p>
+          These improvements demonstrate my ability to apply
+          algorithmic principles and evaluate efficiency
+          and design trade-offs.
+        </p>
+
+        <p>
+          <strong>Status:</strong> Completed and instructor reviewed.
+        </p>
+
+        <p>
+          <em>Original code, enhanced code, and narrative links will be added.</em>
         </p>
       </div>
 
       <div class="artifact-card">
         <h3>Databases</h3>
+
         <p>
-          This enhancement will improve the MongoDB implementation through schema
-          validation, indexing, efficient querying, pagination, filtering, and secure
-          data handling.
+          For my third enhancement, I strengthened the
+          MongoDB and Mongoose implementation used by
+          the Travlr Getaways application.
+        </p>
+
+        <p>
+          Improvements included stronger schema validation,
+          numeric price data, database indexes, timestamps,
+          and improved duplicate-record handling.
+        </p>
+
+        <p>
+          I also updated the API and administrative forms
+          to maintain consistent validation across the
+          application's database and user interface.
+        </p>
+
+        <p>
+          <strong>Status:</strong> Completed and instructor reviewed.
+        </p>
+
+        <p>
+          <em>Original code, enhanced code, and narrative links will be added.</em>
         </p>
       </div>
 
@@ -179,7 +510,12 @@
 </main>
 
 <footer>
-  <p>CS 499 Computer Science ePortfolio | Southern New Hampshire University</p>
+  <p>
+    Troy Clark | CS 499 Computer Science ePortfolio
+  </p>
+  <p>
+    Southern New Hampshire University
+  </p>
 </footer>
 
 </body>
